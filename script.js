@@ -31,7 +31,7 @@ function checkAccess() {
     var input = document.getElementById("passwordInput").value;
 
     // 🔐 CHANGE THIS TO YOUR EXACT PROPOSE DATE
-    var correctPassword = "28-01-2026";
+    var correctPassword = "08-02-2026";
 
     if (input === correctPassword) {
         nextPage("chapter1.html");
@@ -39,4 +39,5 @@ function checkAccess() {
         document.getElementById("errorMsg").style.display = "block";
     }
 }
+
 
