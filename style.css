@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #1a0022, #330033, #4b004b);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    overflow-x: hidden;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.story {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-size: 2.4rem;
+    text-shadow: 0 0 15px rgba(255, 150, 255, 0.6);
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+}
+
+.btn {
+    margin-top: 50px;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff4da6, #ff99cc);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px rgba(255, 100, 200, 0.5);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 120, 220, 0.9);
+}
+
+.fade-in {
+    animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* floating hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    font-size: 20px;
+    animation: floatUp 10s linear infinite;
+    opacity: 0.6;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) scale(1); opacity: 0.7; }
+    100% { transform: translateY(-120vh) scale(1.5); opacity: 0; }
+}

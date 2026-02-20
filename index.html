@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Before We Meet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="center fade-in">
+
+<div class="container">
+
+    <h1>
+        Before we meet for the first time…  
+        I need you to know something.  
+        Something I’ve been holding inside for so long.
+    </h1>
+
+    <p style="margin-top:20px; font-size:1rem; opacity:0.8;">
+        Enter the date that changed everything for us 🤍
+    </p>
+
+    <input type="password" id="passwordInput" placeholder="DD-MM-2026"
+        style="margin-top:25px; padding:12px 20px; border-radius:25px; border:none; width:220px; text-align:center;">
+
+    <br>
+
+    <button class="btn" onclick="checkAccess()">
+        If you're ready… come closer.
+    </button>
+
+    <p id="errorMsg" style="margin-top:15px; color:#ff9ecf; display:none;">
+        That’s not the day you stole my heart…
+    </p>
+
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
